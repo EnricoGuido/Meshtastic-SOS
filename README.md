@@ -18,7 +18,7 @@ Modulo firmware per **Meshtastic** che aggiunge funzionalità di **emergenza SOS
 
 ## 📥 Download
 
-Scarica l'ultimo pacchetto dalla sezione [**Releases**](https://github.com/TUO-USERNAME/meshtastic-sos/releases)
+Scarica l'ultimo pacchetto dalla sezione [**Releases**](https://github.com/EnricoGuido/Meshtastic-SOS/releases)
 
 ## 🎯 Hardware Supportato
 
@@ -195,15 +195,15 @@ pio run -e heltec-mesh-node-t114-sos
 
 ## 📊 Specifiche Tecniche
 
-| Caratteristica | Valore |
-|----------------|--------|
-| Base Firmware | Meshtastic 2.7.20 |
-| Hardware | Heltec T114 V2 (nRF52840) |
-| Canale Default | 1 (configurabile) |
-| Rate Limit | 1 SOS / 30 secondi |
-| Retry | 3 tentativi automatici |
-| Timeout ACK | 2 minuti |
-| Precisione GPS | 6 decimali (~11cm) |
+| Caratteristica | Valore                    |
+|----------------|---------------------------|
+| Base Firmware  | Meshtastic 2.7.20         |
+| Hardware       | Heltec T114 V2 (nRF52840) |
+| Canale Default | 1 (configurabile)         |
+| Rate Limit     | 1 SOS / 30 secondi        |
+| Retry          | 3 tentativi automatici    |
+| Timeout ACK    | 2 minuti                  |
+| Precisione GPS | 6 decimali (~11cm)        |
 
 ## 🤝 Contributi
 
