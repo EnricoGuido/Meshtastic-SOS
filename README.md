@@ -231,9 +231,6 @@ GPL-3.0 (eredita licenza Meshtastic)
 
 Questo è firmware sperimentale **non ufficialmente supportato** da Meshtastic o Heltec.
 
-## 👤 Autore
-
-Sviluppato con assistenza di Claude (Anthropic)
 
 ## 🔗 Link Utili
 
