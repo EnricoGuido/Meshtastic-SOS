@@ -24,8 +24,8 @@ Scarica l'ultimo pacchetto dalla sezione [**Releases**](https://github.com/Enric
 
 - **Heltec Mesh Node T114 V2** (nRF52840 + SX1262)
 - Display TFT 1.14" 240x135 (ST7789)
-- GPS L76K esterno (opzionale)
-- Buzzer piezo passivo o attivo
+- GPS L76K esterno 
+- Buzzer passivo (piezo) o attivo 
 
 ## 📦 Contenuto Pacchetto
 
@@ -105,7 +105,7 @@ Premi rapidamente 3 volte il pulsante PRG sul dispositivo.
 ### Metodo 2: Pulsante Esterno GPIO8
 Collega un pulsante tra GPIO8 e GND, tieni premuto per 4 secondi.
 
-Durante la pressione vedrai:
+Durante la pressione vedrai il countdown:
 ```
 SOS in 3s...
 SOS in 2s...
@@ -147,28 +147,28 @@ cp sos-package/variants/nrf52840/heltec_mesh_node_t114/platformio.ini \
 pio run -e heltec-mesh-node-t114-sos
 
 # 4. Output
-# .pio/build/heltec-mesh-node-t114-sos/firmware.hex
+# .pio/build/heltec-mesh-node-t114-sos/firmware-heltec-mesh-node-t114-sos-2.7.20.uf2
 ```
 
 ## 📸 Screenshots
 
 ### SOS Inviato
 ```
-┌───────────────┐
-│               │
-│ SOS INVIATO   │ (lampeggiante)
-│               │
-└───────────────┘
+┌─────────────────┐
+│                 │
+│  SOS INVIATO    │ (lampeggiante)
+│                 │
+└─────────────────┘
 ```
 
 ### SOS Ricevuto
 ```
-┌───────────────┐
-│Rx SOS da:abcd │
-│t:14:32 pos@12:│ (lampeggiante 30s)
-│lat:45.123456  │
-│lon:9.234567   │
-└───────────────┘
+┌─────────────────┐
+│Rx SOS da:abcd   │
+│t:14:32 pos@12:53│ (lampeggiante 30s)
+│lat:45.123456    │
+│lon:9.234567     │
+└─────────────────┘
 ```
 
 ## ⚠️ Avvertenze
@@ -181,7 +181,7 @@ pio run -e heltec-mesh-node-t114-sos
 ## 🐛 Risoluzione Problemi
 
 ### Triple-click non funziona
-- Premi circa 1 click/secondo (non troppo veloce)
+- Premi circa 3 click in 1 secondo (non troppo veloce)
 - Aspetta 30 secondi dall'ultimo SOS (rate limit)
 
 ### Buzzer non suona
